@@ -1,0 +1,137 @@
+:root {
+    --primary-light: hsl(30, 38%, 92%);
+    --accent-color: hsl(158, 36%, 37%);
+    --title-color: hsl(212, 21%, 14%);
+    --body-color: hsl(228, 12%, 48%);
+    --background-color: hsl(0, 0%, 100%);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: var(--primary-light);
+}
+
+.container{
+    background-color: var(--background-color);
+    height: 650px;
+    width: 1000px;
+    padding:0px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+}
+
+.before{
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: var(--body-color);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 35px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.text{
+    padding: 40px;
+}
+
+.text .before{
+    padding-bottom: 20px;
+}
+
+.main-title{
+    font-size: 60px;
+    color: var(--title-color);
+    padding-bottom: 20px;
+}
+
+.main-body{
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: var(--body-color);
+    line-height: 30px;
+}
+
+.prices{
+    display: flex;
+    padding-bottom: 30px;
+    gap: 35px;
+}
+
+.new{
+    font-size: 45px;
+    font-family: 'Fraunces', serif;
+    color: var(--accent-color);
+}
+
+.old{
+    font-size: 20px;
+    font-family: 'Fraunces', serif;
+    color: var(--body-color);
+    text-decoration: line-through;
+    justify-self: center;
+    align-self: center;
+}
+
+.buy{
+    background-color: var(--accent-color);
+    display: inline-block;
+    padding: 20px 100px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 40px;
+}
+
+.buy img{
+    width: 10%;
+    height: auto;
+}
+
+.buy a{
+    text-decoration: none;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.arr{
+    align-items: center;
+    width: 100px;
+    height:auto;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.grow{
+    transition: transform .1s ease-in;
+    
+
+}
+.grow:hover{
+    transform: scale(1.2) rotate(270deg);
+}
+
